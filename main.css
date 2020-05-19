@@ -257,3 +257,74 @@ html, body {
         width: 300px;
     }
 }
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  width: 400px;
+}
+.autocomplete {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    width: 400px;
+}
+
+.autocomplete > * {
+    font-size: 15px;
+}
+
+.autocomplete > select {
+    text-align: left;
+    width: 400px;
+}
+
+.autocomplete > input {
+    padding: 7px 5px;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    text-align: left;
+}
+
+.autocomplete > input:focus, .input-box > input:active {
+    outline: none;
+    border-color: #000;
+}
+
+.autocomplete > label {
+    font-size: 12px;
+    margin-bottom: 3px;
+    text-align: left
+}
+
+    
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}

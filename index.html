@@ -23,19 +23,20 @@
     <div id="container">
         <span id="title">BITS Time &dash; Table Visualizer</span>
         <div id="input-container">
-            <div class="input-box">
+            <div class="autocomplete">
                 <label>Course title:</label>
                 <input type="text" id="course-title" />
             </div>
-            <div class="input-box">
+            <div class="autocomplete">
                 <label>Classroom:</label>
                 <input type="text" id="classroom" />
+                </div>
             </div>
-            <div class="input-box">
+            <div class="autocomplete">
                 <label>Section and/or teacher:</label>
-                <input type="text" id="section" />
+                <input id="section" type="text" name="section" />
             </div>
-            <div class="input-box">
+            <div class="autocomplete">
                 <label>Select days:</label>
                 <select id="days" name="days[]" multiple="multiple">
                     <option value="1">Monday</option>
@@ -47,7 +48,7 @@
                     <option value="7">Sunday</option>
                 </select>
             </div>
-            <div class="input-box">
+            <div class="autocomplete">
                 <label>Select hours:</label>
                 <select id="hours" name="hours[]" multiple="multiple">
                     <option value="1">1: 8:00 - 9:00</option>
@@ -70,12 +71,14 @@
         </div>
         <span><i>Click on the cell to delete the added course</i></span>
         <br>
+        <centre>
         <div id="timetable">
 
         </div>
         <div id="error">
 
         </div>
+        </centre>
         <a id="star" class="floating" href="https://github.com/sarthak-sehgal/timetable-visualizer" target="_blank">
             <img src="star.png" alt="star"/>
             Star on GitHub
@@ -98,5 +101,6 @@
     crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script src="main.js"></script>
+    <script src="autocomplete.js"></script>
 </body>
 </html>
