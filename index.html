@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130782039-2"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-130782039-2');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130782039-2');
     </script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,26 +21,32 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-    <link rel="icon" href="favicon.png" sizes="24x24" type="image/png"> 
+    <link rel="icon" href="favicon.png" sizes="24x24" type="image/png">
 </head>
+
 <body>
     <div id="container">
         <span id="title">BITS Time &dash; Table Visualizer</span>
         <div id="input-container">
-            <div class="autocomplete">
+            <div class="autocomplete input-box">
                 <label>Course title:</label>
                 <input type="text" id="course-title" />
             </div>
-            <div class="autocomplete">
+            <div class="autocomplete input-box">
                 <label>Classroom:</label>
                 <input type="text" id="classroom" />
-                </div>
             </div>
-            <div class="autocomplete">
+            <div class="input-box">
+                <label>Select Class Type Lecture/Tutorial/Practical:</label>
+                <select id="class_type" name="class_type">
+                
+                </select>
+            </div>
+            <div class="autocomplete input-box">
                 <label>Section and/or teacher:</label>
-                <input id="section" type="text" name="section" />
+                <input type="text" id="section" />
             </div>
-            <div class="autocomplete">
+            <div class="input-box">
                 <label>Select days:</label>
                 <select id="days" name="days[]" multiple="multiple">
                     <option value="1">Monday</option>
@@ -48,7 +58,7 @@
                     <option value="7">Sunday</option>
                 </select>
             </div>
-            <div class="autocomplete">
+            <div class="input-box">
                 <label>Select hours:</label>
                 <select id="hours" name="hours[]" multiple="multiple">
                     <option value="1">1: 8:00 - 9:00</option>
@@ -71,36 +81,29 @@
         </div>
         <span><i>Click on the cell to delete the added course</i></span>
         <br>
-        <centre>
         <div id="timetable">
 
         </div>
         <div id="error">
 
         </div>
-        </centre>
         <a id="star" class="floating" href="https://github.com/sarthak-sehgal/timetable-visualizer" target="_blank">
-            <img src="star.png" alt="star"/>
-            Star on GitHub
+            <img src="star.png" alt="star" /> Star on GitHub
         </a>
         <a id="author" class="floating" href="https://sarthak-sehgal.github.io" target="_blank">
-            <img src="heart.png" alt="star"/>
-            Made by Sarthak Sehgal
+            <img src="heart.png" alt="star" /> Made by Sarthak Sehgal
         </a>
         <div id="author1" class="floating" href="#">
-            <img src="social.png" alt="star"/>            
-            Promoted by Rahul Bubna
+            <img src="social.png" alt="star" /> Promoted by Rahul Bubna
         </div>
     </div>
     <div id="desktopView">
         Please view on desktop.
     </div>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
     <script src="main.js"></script>
-    <script src="autocomplete.js"></script>
+    <script src='autocomplete.js'></script>
 </body>
+
 </html>

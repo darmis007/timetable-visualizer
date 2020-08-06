@@ -7,7 +7,8 @@
     transition: all 0.3s ease forwards;
 }
 
-html, body {
+html,
+body {
     width: 100vw;
     overflow-x: auto;
     background-color: #6391db;
@@ -48,28 +49,29 @@ html, body {
     width: 400px;
 }
 
-.input-box > * {
+.input-box>* {
     font-size: 12px;
 }
 
-.input-box > select {
+.input-box>select {
     text-align: left;
     width: 400px;
 }
 
-.input-box > input {
+.input-box>input {
     padding: 7px 5px;
     border-radius: 3px;
     border: 1px solid #aaa;
     text-align: left;
 }
 
-.input-box > input:focus, .input-box > input:active {
+.input-box>input:focus,
+.input-box>input:active {
     outline: none;
     border-color: #000;
 }
 
-.input-box > label {
+.input-box>label {
     font-size: 12px;
     margin-bottom: 3px;
     text-align: left
@@ -79,7 +81,8 @@ html, body {
     display: flex;
 }
 
-#add-btn, #undo-btn {
+#add-btn,
+#undo-btn {
     background: #4BB543;
     color: #fff;
     cursor: pointer;
@@ -96,12 +99,16 @@ html, body {
     background: #eea236;
 }
 
-#add-btn:focus, #add-btn:active, #undo-btn:focus, #undo-btn:active {
+#add-btn:focus,
+#add-btn:active,
+#undo-btn:focus,
+#undo-btn:active {
     outline: none;
-    border: none;    
+    border: none;
 }
 
-#add-btn:hover, #undo-btn:hover {
+#add-btn:hover,
+#undo-btn:hover {
     outline: none;
     border: none;
     background: rgb(45, 121, 40);
@@ -124,7 +131,7 @@ html, body {
 .cell {
     width: 120px;
     min-height: 40px;
-    border: 1px solid rgba(0,0,0,0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,9 +154,9 @@ html, body {
 @keyframes fadeIn {
     from {
         opacity: 0;
-    } 
+    }
     to {
-        opacity: 1;    
+        opacity: 1;
     }
 }
 
@@ -177,7 +184,7 @@ html, body {
     cursor: pointer;
 }
 
-.floating > img {
+.floating>img {
     max-height: 17px;
     margin-right: 5px;
 }
@@ -219,7 +226,7 @@ html, body {
     .input-box {
         width: 400px;
     }
-    .input-box > select {
+    .input-box>select {
         width: 400px;
     }
 }
@@ -232,10 +239,12 @@ html, body {
     .input-box {
         width: 400px;
     }
-    .input-box > select {
+    .input-box>select {
         width: 400px;
     }
-    #star, #author, #author1 {
+    #star,
+    #author,
+    #author1 {
         position: static;
         margin-top: 10px;
     }
@@ -253,20 +262,21 @@ html, body {
     .input-box {
         width: 300px;
     }
-    .input-box > select {
+    .input-box>select {
         width: 300px;
     }
 }
 
 .autocomplete {
-  /*the container must be positioned relative:*/
-  position: relative;
-  display: inline-block;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 8px;
-  width: 400px;
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    width: 400px;
 }
+
 .autocomplete {
     display: flex;
     flex-direction: column;
@@ -274,57 +284,60 @@ html, body {
     width: 400px;
 }
 
-.autocomplete > * {
+.autocomplete>* {
     font-size: 15px;
 }
 
-.autocomplete > select {
+.autocomplete>select {
     text-align: left;
     width: 400px;
 }
 
-.autocomplete > input {
+.autocomplete>input {
     padding: 7px 5px;
     border-radius: 3px;
     border: 1px solid #aaa;
     text-align: left;
 }
 
-.autocomplete > input:focus, .input-box > input:active {
+.autocomplete>input:focus,
+.input-box>input:active {
     outline: none;
     border-color: #000;
 }
 
-.autocomplete > label {
+.autocomplete>label {
     font-size: 12px;
     margin-bottom: 3px;
     text-align: left
 }
 
-    
 .autocomplete-items {
-  position: absolute;
-  border: 1px solid #d4d4d4;
-  border-bottom: none;
-  border-top: none;
-  z-index: 99;
-  /*position the autocomplete items to be the same width as the container:*/
-  top: 100%;
-  left: 0;
-  right: 0;
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
 }
+
 .autocomplete-items div {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #fff;
-  border-bottom: 1px solid #d4d4d4;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
 }
+
 .autocomplete-items div:hover {
-  /*when hovering an item:*/
-  background-color: #e9e9e9;
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
 }
+
 .autocomplete-active {
-  /*when navigating through the items using the arrow keys:*/
-  background-color: DodgerBlue !important;
-  color: #ffffff;
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
 }
