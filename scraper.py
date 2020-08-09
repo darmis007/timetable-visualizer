@@ -146,6 +146,5 @@ def get_all_dep_wise_files():
     for dep in all_deps:
         dep_courses = get_dept_courses(department=dep,return_file=True)                
 
-get_dept_courses()
 
 
